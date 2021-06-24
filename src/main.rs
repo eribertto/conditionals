@@ -39,4 +39,25 @@ fn main() {
 			break;
 		}
     }
+    // call function using for-loops
+    forloop();
+}
+
+fn forloop() {
+    println!("\nAll about for-loops.");
+    let numbers = 30..51;   // note this is a range
+    for num in numbers {
+        println!("the number is {}", num);
+    }
+    // using vector data type and its methods
+    println!("\nFor-loops using vectors and iter method.");
+    let animals = vec!["Rabbit", "Dog", "Cat", "Mouse"];
+    for an in animals.iter() {
+        println!("\nAnimal name is {}", an);
+    }
+    // using enumerate method to get index in iterator
+    for (index, an) in animals.iter().enumerate() {
+        println!("\nindex:{}, name:{}", index, an);
+    }
+    
 }
