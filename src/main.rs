@@ -20,4 +20,23 @@ fn main() {
         n / 2
     }; // all let bindings need closing semicolon
     println!("{} -> {}", n, big_n);
+
+    // loop
+    let mut count = 0u32; // look at this unsigned 32 formatting
+    println!("Lets count until infinity!");
+    loop {
+        // infinite loop and keywords
+        count += 1; // increment on each loop
+        if count == 3 {
+            println!("skip three");
+            // skip this loop and move to the next
+            continue;
+        }
+		println!("{}", count);
+		if count == 15 {
+			println!("OK thats enough");
+			// exit the loop
+			break;
+		}
+    }
 }
